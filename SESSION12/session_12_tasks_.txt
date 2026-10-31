@@ -1,0 +1,58 @@
+SESSION 12: HYPOTHESIS TESTING & A/B TESTING - TASKS & ANSWERS
+==============================================================
+
+TASK 1: Hypotheses for Food Delivery Cashback Offer
+--------------------------------------------------
+Problem:
+State the null and alternative hypotheses for testing whether a new cashback offer on a food delivery app (like Zomato) has increased the average number of daily orders compared to before the offer.
+
+Answer:
+Let mu_0 be the baseline average number of daily orders before the cashback offer.
+Let mu be the average number of daily orders after the cashback offer.
+
+- Null Hypothesis (H0):
+  H0: mu <= mu_0
+  The cashback offer has no effect or decreases the average daily orders.
+
+- Alternative Hypothesis (H1 or Ha):
+  H1: mu > mu_0
+  The cashback offer significantly increases the average daily orders (one-tailed/right-tailed test).
+
+
+TASK 2: Error Identification for Music Streaming Recommendation Algorithm
+-------------------------------------------------------------------------
+Problem:
+A music streaming app claims their new playlist recommendation algorithm increases average listening time from 40 to 45 minutes. If you set up a hypothesis test, identify which type of error (Type I or Type II) would occur if you wrongly conclude the algorithm works when it actually doesn't, and explain in one sentence why.
+
+Answer:
+- Error Type: Type I Error (False Positive)
+- Explanation: A Type I error occurs because you reject a true null hypothesis by wrongly concluding that the recommendation algorithm increases listening time when, in reality, it is ineffective and the observed difference was due to random chance.
+
+
+TASK 3: Flipkart A/B Test Decision (p = 0.03 at 95% Confidence)
+---------------------------------------------------------------
+Problem:
+Suppose you run an A/B test on a shopping app (like Flipkart) and get a p-value of 0.03 when testing if a new discount banner increases purchases. At a 95% confidence level, state whether you reject or fail to reject the null hypothesis and explain what this means in the context of the app.
+
+Answer:
+- Significance Level:
+  alpha = 1 - 0.95 = 0.05
+
+- Decision:
+  Since p-value (0.03) < alpha (0.05), we reject the null hypothesis (H0).
+
+- Meaning in Context:
+  There is statistically significant evidence that the new discount banner increases purchases. Flipkart can safely launch the new banner across the app, as there is only a 3% chance that this observed improvement occurred due to random noise.
+
+
+TASK 4: 99% Confidence Level for Cricket App Match Alerts
+---------------------------------------------------------
+Problem:
+For a cricket app's push notification feature, you want to be 99% confident that sending match alerts increases user engagement. Explain what the 99% confidence level means in this context, and how it affects your decision to accept or reject the feature.
+
+Answer:
+- Meaning of 99% Confidence Level:
+  A 99% confidence level corresponds to a significance level of alpha = 0.01 (1%). In this context, it means there is only a 1% allowable risk of making a Type I error (concluding that match alerts boost engagement when they actually do not).
+
+- Effect on Decision-Making:
+  This high standard makes the decision criteria much more conservative, requiring a lower p-value (p < 0.01) before launching the feature. Because spamming users with unnecessary push notifications can lead to app uninstalls, this ensures the team will only roll out the match alert feature if the positive impact on engagement is exceptionally clear and reliable.
